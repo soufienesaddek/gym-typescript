@@ -14,19 +14,19 @@ import ActionButton from "@/shared/ActionButton";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    title: "Installations à la Pointe de la Technologie",
     description:
-      "Ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo soluta minima dolor amet consectetur adipisci voluptatem, facere illo repudiandae porro quis ullam quam reprehenderit unde ad iusto voluptatibus reiciendis ducimus. ",
+      "Une expérience d'entraînement de pointe grâce à nos équipements de dernière génération. Nous disposons de machines de musculation et d'haltères de haute qualité pour rendre vos séances d'entraînement plus stimulantes et efficaces. ",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of diverse classes",
+    title: "Cours Variés",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam exercitationem soluta, dolorum maiores dolores aliquid impedit nihil ipsa vero vel modi quia. Ducimus, quas optio! Vero voluptatem",
+      "Nous sommes fiers de proposer une grande variété de cours de fitness. Que vous préfériez les cours de yoga pour améliorer votre souplesse et votre équilibre, les cours de cardio pour brûler des calories, les cours de musculation pour tonifier votre corps, ou encore les cours de danse pour vous amuser tout en vous entraînant. Nos instructeurs qualifiés sont là pour vous guider et vous motiver à chaque étape.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    title: "Des Coachs Professionels",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam exercitationem soluta, dolorum maiores dolores aliquid impedit nihil ipsa vero vel modi quia. Ducimus, quas optio! Vero voluptatem",
   },
@@ -45,9 +45,9 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="avantages" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Avantages)}
       >
         {/* HEADER */}
         <motion.div
@@ -61,7 +61,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText>PLUS QU'UNE SALLE DE SPORT.</HText>
           <p className="my-5 text-sm">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
             voluptatibus nulla, incidunt vero doloremque hic? Fugit quasi modi
@@ -113,8 +113,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                  }}
                  >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    DES CENTAINES DE MEMBRES {" "}
+                    <span className="text-primary-500">EN FORME</span>
                   </HText>
                 </motion.div>
               </div>
@@ -136,7 +136,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* BUTTON */}
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+                <ActionButton setSelectedPage={setSelectedPage}>Rejoindre</ActionButton>
               </div>
             </div>
           </div>

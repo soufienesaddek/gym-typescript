@@ -1,4 +1,4 @@
-import SponsorRedBull from "../../assets/SponsorRedBull.png";
+import SponsorRedBull from "../../assets/Red-Bull-Logo (1).png";
 import SponsorForbes from "../../assets/SponsorForbes.png";
 import SponsorFortune from "../../assets/SponsorFortune.png";
 import HomePageText from "@/assets/HomePageText.png";
@@ -17,11 +17,11 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="accueil" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div 
         className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
-        onViewportEnter={()=>setSelectedPage(SelectedPage.Home)}
+        onViewportEnter={()=>setSelectedPage(SelectedPage.Accueil)}
         >
         {/* MAIN HEADER */}
         <div className="z-10 mt-32 md:basis-3/5">
@@ -43,9 +43,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm md:text-start">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+            Brûlez des calories en vous amusant : découvrez notre large choix de cours en groupe dans une salle équipée d'équipements de classe mondiale
             </p>
           </motion.div>
           {/* ACTIONS */}
@@ -59,14 +57,14 @@ const Home = ({ setSelectedPage }: Props) => {
             visible: {opacity: 1, x:0}, 
           }}>
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Rejoindre
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-              href={`#${SelectedPage.ContactUs}`}
+              onClick={() => setSelectedPage(SelectedPage.NousContacter)}
+              href={`#${SelectedPage.NousContacter}`}
             >
-              <p>Learn More</p>
+              <p>En savoir plus ...</p>
             </AnchorLink>
           </motion.div>
         </div>
@@ -81,8 +79,8 @@ const Home = ({ setSelectedPage }: Props) => {
       {isAboveMediumScreens && (
       <div className="h-[150px] w-full bg-primary-100 py-10">
         <div className="mx-auto w-5/6">
-          <div className="flex items-center justify-between gap-8">
-            <img alt="redbull-sponsor" src={SponsorRedBull}/>
+          <div className="flex w-3/5 items-center justify-between gap-8">
+            <img alt="redbull-sponsor" src={SponsorRedBull} width="100px"/>
             <img alt="forbes-sponsor" src={SponsorForbes}/>
             <img alt="fortune-sponsor" src={SponsorFortune}/>
           </div>

@@ -23,9 +23,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     }
   };
   return (
-    <section id="contactus" className="mx-auto w-5/6">
+    <section id="nouscontacter" className="mx-auto w-5/6">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.NousContacter)}
       >
         {/* HEADER */}
         <motion.div
