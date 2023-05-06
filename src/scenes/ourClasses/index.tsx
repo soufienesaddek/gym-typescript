@@ -69,12 +69,10 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5">
+          <div className="md:w-9/12">
             <HText>NOS COURS</HText>
             <p className="py-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates laboriosam ab id ex, reiciendis adipisci excepturi
-              maiores veniam hic quam
+            Notre salle de gym offre différentes options pour répondre aux besoins de chaque membre. Vous pouvez choisir un entraînement libre pour votre propre programme, ou opter pour un coaching personnalisé pour un suivi plus spécifique de vos objectifs. Nous proposons également des cours progressifs animés par nos entraîneurs expérimentés, qui vous permettront d'atteindre vos objectifs plus rapidement, tout en bénéficiant du soutien et de la motivation d'un groupe convivial. Chez nous, nous croyons que l'exercice devrait être un moment agréable, c'est pourquoi nous nous efforçons de créer une ambiance chaleureuse et accueillante, où chacun peut se sentir à l'aise et apprécier ses séances d'entraînement.
             </p>
           </div>
         </motion.div>

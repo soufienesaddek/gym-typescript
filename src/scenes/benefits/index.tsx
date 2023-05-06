@@ -7,7 +7,7 @@ import {
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
 import Benefit from "./Benefit";
-import exerciceVelo from '../../assets/exerciceVelo.png';
+import exerciceVelo from '@/assets/exerciceVelo.png';
 import ActionButton from "@/shared/ActionButton";
  
 
@@ -28,7 +28,7 @@ const benefits: Array<BenefitType> = [
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Des Coachs Professionels",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam exercitationem soluta, dolorum maiores dolores aliquid impedit nihil ipsa vero vel modi quia. Ducimus, quas optio! Vero voluptatem",
+      "Nos coachs sont tout simplement incroyables ! Ils sont dévoués à vous aider à atteindre vos objectifs de remise en forme en utilisant des méthodes d'entraînement innovantes et efficaces. Leur passion pour le fitness est contagieuse et leur soutien constant vous permettra de dépasser vos limites. Avec eux, vous êtes entre de bonnes mains !",
   },
 ];
 
@@ -51,7 +51,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
       >
         {/* HEADER */}
         <motion.div
-          className="md:my-5 md:w-3/5"
+          className="md:my-5 md:w-10/12"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -63,16 +63,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
         >
           <HText>PLUS QU'UNE SALLE DE SPORT.</HText>
           <p className="my-5 text-sm">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-            voluptatibus nulla, incidunt vero doloremque hic? Fugit quasi modi
-            officia illo officiis aspernatur rerum quos sint, tempora amet hic
-            quod repellendus?
+          Nous vous invitons à découvrir notre salle de sport aux nombreux avantages. Nous proposons des équipements haut de gamme ainsi qu'un environnement motivant pour vous aider à atteindre vos objectifs de fitness. Nos coachs expérimentés et  accueillants vous accompagneront dans votre parcours de remise en forme. Nous croyons que la santé physique et mentale sont étroitement liées et c'est pourquoi nous encourageons nos clients à maintenir une pratique régulière pour se sentir bien dans leur peau. Venez nous rejoindre et découvrir les avantages de notre salle pour votre bien-être.
           </p>
         </motion.div>
 
         {/* BENEFITS */}
         <motion.div
-          className="mt-5 items-center justify-between gap-8 md:flex"
+          className="mt-5 items-center  gap-6 md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -95,7 +92,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           className="mx-auto"
           alt="benefits-image"
           src={exerciceVelo}
-          width="450px"
+          width="500px"
           />
           {/* DESCRIPTION */}
           <div>
@@ -130,8 +127,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                visible: { opacity: 1, x: 0 },
              }}
              >
-              <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quod quas quis eos distinctio illum sunt? Id, laudantium modi! Debitis, unde consequuntur temporibus, qui assumenda aliquid eveniet rerum veritatis earum facilis vitae, deserunt adipisci atque distinctio iure dolorum eius. Vitae!</p>
-              <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quo cumque ipsum voluptatum reprehenderit, dignissimos corporis nihil at. Explicabo perspiciatis recusandae, inventore aut quisquam officiis!</p>
+              <p className="my-5">Nos membres peuvent obtenir des résultats remarquables en matière de remise en forme. En effet, en combinant une alimentation équilibrée, une routine d'exercice régulière et un style de vie sain, les membres peuvent voir une amélioration significative de leur santé physique et mentale. Les résultats peuvent varier en fonction des objectifs individuels de chaque membre, mais de manière générale, une pratique régulière de l'exercice peut aider à perdre du poids, renforcer la musculature, augmenter l'endurance et la flexibilité, améliorer la santé cardiovasculaire et réduire le stress. </p>
+              <p className="mb-5">Vous pourrez constater des changements positifs dans votre estime de soi et votre confiance en vous-même. Les résultats obtenus dépendent de l'engagement et de la persévérance de chaque membre, mais avec le soutien et les conseils des coachs et des autres membres, notre salle de gym peut être un environnement propice à l'atteinte de résultats significatifs et durables.</p>
             </motion.div>
             {/* BUTTON */}
             <div className="relative mt-16">

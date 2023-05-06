@@ -23,7 +23,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     }
   };
   return (
-    <section id="nouscontacter" className="mx-auto w-5/6">
+    <section id="nouscontacter" className="mx-auto w-5/6 mb-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.NousContacter)}
       >
@@ -44,9 +44,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             EN FORME
           </HText>
           <p className="my-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-            magni quisquam dolore consectetur sapiente assumenda molestiae atque
-            fugit
+            Pour de plus amples informations, nous transmettre vos préoccuputations et nous nous ferons un plaisir de vous répondre dans les délais les plus brefs.
           </p>
         </motion.div>
         {/* FORM AND IMAGE */}
@@ -143,7 +141,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           >
             <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
               <img
-                className="w-full"
+                className="w-full rounded-xl"
                 alt="Contact-us-page-graphic"
                 src={ContactUsPageGraphic}
               />
