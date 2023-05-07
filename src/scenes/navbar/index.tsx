@@ -70,7 +70,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       </div>
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed top-[20 px] right-0 z-40 h-[400px] w-[250px] bg-gray-400 drop-shadow-xl opacity-90" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+        <div className="fixed top-[20 px] right-0 z-40 h-[400px] w-[250px] bg-gray-400 drop-shadow-xl" onClick={() => setIsMenuToggled(!isMenuToggled)}>
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
