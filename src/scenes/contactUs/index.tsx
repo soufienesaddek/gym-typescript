@@ -23,7 +23,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     }
   };
   return (
-    <section id="nouscontacter" className="mx-auto w-5/6 mb-20">
+    <section id="nouscontacter" className="mx-auto mb-20 w-5/6">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.NousContacter)}
       >
@@ -32,7 +32,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           className="md:w-3/5"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
@@ -44,7 +44,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             EN FORME
           </HText>
           <p className="my-5">
-            Pour de plus amples informations, nous transmettre vos préoccuputations et nous nous ferons un plaisir de vous répondre dans les délais les plus brefs.
+            Pour de plus amples informations, veuillez nous transmettre vos
+            préoccuputations et nous nous ferons un plaisir de vous répondre
+            dans les délais les plus brefs.
           </p>
         </motion.div>
         {/* FORM AND IMAGE */}
@@ -53,7 +55,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             className="mt-10 basis-3/5 md:mt-0"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
@@ -66,6 +68,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               action="https://formsubmit.co/5528e507785ca9e7f54e4c488df020fc"
               method="POST"
             >
+              <input type="hidden" name="_captcha" value="false" />
+
               <input
                 className={inputStyles}
                 type="text"
@@ -132,7 +136,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             className="relative mt-16 basis-2/5 md:mt-0"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
